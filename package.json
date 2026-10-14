@@ -1,0 +1,27 @@
+{
+  "name": "thermalmind",
+  "version": "1.0.0",
+  "description": "ThermalMind: AI-Powered Data Center Cooling Optimization System",
+  "scripts": {
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "seed": "cd backend && npm run seed",
+    "generate:data": "cd backend && npm run generate:data",
+    "start:backend": "cd backend && npm run dev",
+    "start:frontend": "cd frontend && npm run dev",
+    "dev": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
+    "test": "cd backend && npm test",
+    "build": "cd frontend && npm run build"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "keywords": [
+    "data-center",
+    "cooling-optimization",
+    "ai-forecasting",
+    "anomaly-detection",
+    "thermalmind"
+  ],
+  "author": "ThermalMind Team",
+  "license": "ISC"
+}
